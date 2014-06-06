@@ -15,6 +15,7 @@ public class ContactDAOImpl implements ContactDAO {
 	private EntityManagerFactory  entityManagerFactory;
 
 	public void addContact(Contact contact) {
+		System.out.println("add");
 		entityManagerFactory.createEntityManager().persist(contact);
 	}
 

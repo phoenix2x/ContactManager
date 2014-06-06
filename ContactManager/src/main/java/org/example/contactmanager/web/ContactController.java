@@ -36,7 +36,7 @@ public class ContactController {
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String addContact(@ModelAttribute("contact") Contact contact,
 			BindingResult result) {
-
+		System.out.println("qq");
 		contactService.addContact(contact);
 
 		return "redirect:/index";

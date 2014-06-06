@@ -67,4 +67,23 @@ public class Contact {
 		this.telephone = telephone;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		if (id != null)
+			builder.append(id).append(";");
+		if (firstname != null)
+			builder.append(firstname).append(";");
+		if (lastname != null)
+			builder.append(lastname).append(";");
+		if (email != null)
+			builder.append(email).append(";");
+		if (telephone != null)
+			builder.append(telephone);
+		return builder.toString();
+	}
+
 }
